@@ -4,7 +4,7 @@ import Links from './Links'
 
 export default function Header() {
   return (
-    <Stack>
+    <Stack justifyContent={'space-between'} p={'30px 100px'} alignItems={'center'} direction={'row'}>
       <Link sx={{ width: '50px', height: '50px' }} href="#">
         <img
           style={{ width: '100%', height: '100%' }}
@@ -12,7 +12,7 @@ export default function Header() {
           alt=""
         />
       </Link>
-      <Stack>
+      <Stack gap={'40px'} direction={'row'}>
         <Links />
       </Stack>
     </Stack>
