@@ -1,5 +1,6 @@
 import { Link, Stack } from '@mui/material'
 import React from 'react'
+import Links from './Links'
 
 export default function Header() {
   return (
@@ -11,7 +12,9 @@ export default function Header() {
           alt=""
         />
       </Link>
-      header
+      <Stack>
+        <Links />
+      </Stack>
     </Stack>
   )
 }
